@@ -4,7 +4,7 @@ var server = express()
 server.use(express.static(__dirname + '/public'))
 server.get('*', function (req, res, next) {
     // custom logger
-    console.log('SOMEONE IS TALKING TO ME')
+    console.log('HELLO WORLD')
     next()
 })
 
